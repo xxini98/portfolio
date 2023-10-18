@@ -149,11 +149,11 @@
     height: 100%;
     margin: 0 auto;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .bubble-wrap {
     position: relative;
-    width: 50%;
+    width: 40%;
     height: 100%;
     .bpb {
       position: absolute;
@@ -232,6 +232,7 @@
       font-weight: 700;
     }
     .bw-con {
+      font-size: 14px;
       font-weight: 300;
       color: #222222;
     }
@@ -243,6 +244,7 @@
       margin-bottom: 5px;
     }
     .tec-gra-con {
+      font-size: 14px;
       display: inline-block;
       margin: 0 10px 5px 0;
       font-weight: 300;
@@ -254,70 +256,168 @@
   }
 }
 
-.portfolio {
-  background: #f2eee7;
-  .fp-overflow {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
+// .portfolio {
+//   // background: linear-gradient(225deg, #343434, #1A1A1A);
+//   background-image: linear-gradient(2deg, #343434, black );
+//   .fp-overflow {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+// }
 
-.portfolio-wrap {
-  .pf-section {
-    position: relative;
-    display: flex;
-    width: 100vw;
-    height: 80vh;
-    overflow: hidden;
-    margin: 0 auto;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 1;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(5px);
-      border-radius: 80px;
-      z-index: -1;
-    }
-  }
-  .pf-left {
-    width: 50%;
-    height: 70%;
-    .slide-cover {
-      height: 100%;
-      .box {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-position: top;
-        transition: all 3s;
-        &:hover {
-          background-position: bottom;
-        }
-      }
-      .box-1 {
-        background: url(../../images/main/saint-pc.png) no-repeat 0 0;
-        background-size: 100%;
-      }
-    }
-  }
-  .pf-right {
-    width: 25%;
-  }
-}
+// .portfolio-wrap {
+//   .pf-section {
+//     position: relative;
+//     display: flex;
+//     width: 100vw;
+//     height: 80vh;
+//     overflow: hidden;
+//     margin: 0 auto;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     z-index: 1;
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       width: 100%;
+//       height: 100%;
+//       background: rgba(255, 255, 255, 0.5);
+
+//       backdrop-filter: blur(3px);
+//       z-index: -1;
+//     }
+//   }
+//   .pf-left {
+//     width: 50%;
+//     height: 70%;
+//     .slide-cover {
+//       height: 100%;
+//       .box {
+//         width: 100%;
+//         height: 100%;
+//         border-radius: 60px;
+//         overflow: hidden;
+//         background-position: top;
+//         transition: all 3s;
+//         &:hover {
+//           background-position: bottom;
+//         }
+//       }
+//       .box-1 {
+//         background: url(../../images/main/saint-pc.png) no-repeat 0 0;
+//         background-size: 100%;
+//       }
+//     }
+//   }
+//   .pf-right {
+//     width: 25%;
+//   }
+// }
 
 .sec4 {
-  background: saddlebrown;
+  position: relative;
+  background: #34393c;
+  overflow: hidden;
+  z-index: 1;
+  .portfolio_circle {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150vw;
+    height: 100vh;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #2c3033;
+    z-index: -1;
+  }
+}
+.portfolio_wrap {
+  display: flex;
+  position: relative;
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.macbook {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 850px;
+  z-index: 10;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .imgbx-mb {
+    position: absolute;
+    top: 29px;
+    left: 101px;
+    width: 658px;
+    height: 428px;
+
+    background-position: top;
+    transition: all 3s;
+    z-index: 2;
+    &:hover {
+      background-position: bottom;
+    }
+  }
+  .mb1 {
+    background: url(../../images/main/saint-pc.png) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+.iphone {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 180px;
+  z-index: 11;
+  &:hover .imgbx-ip {
+    background-position: bottom;
+  }
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+  .imgbx-ip {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 160px;
+    height: 345px;
+    border-radius: 15px;
+    z-index: 1;
+    transition: all 3s;
+  }
+  .ip1 {
+    background: url(../../images/main/saint-m.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+
+.port-left {
+  width: 40%;
+  height: 100%;
+}
+.port-right {
+  width: 50%;
+  height: 100%;
 }
 
 .fp-watermark {
@@ -325,7 +425,7 @@
 }
 
 div {
-  cursor: none;
+  // cursor: none;
 }
 
 [data-cursor] {
