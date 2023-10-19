@@ -275,7 +275,7 @@ legend {
 }
 
 .sec1 {
-  background: #f2eee7;
+  background: #ffffff;
 }
 .sec1 #home {
   position: relative;
@@ -396,7 +396,7 @@ legend {
 }
 
 .sec2 {
-  background: #f2eee7;
+  background: #ffffff;
 }
 .sec2 #about {
   position: relative;
@@ -514,13 +514,12 @@ legend {
   margin-bottom: 15px;
 }
 
-.sec4 {
+.pfs {
   position: relative;
-  background: #34393c;
   overflow: hidden;
   z-index: 1;
 }
-.sec4 .portfolio_circle {
+.pfs .portfolio_circle {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -529,8 +528,28 @@ legend {
   height: 100vh;
   margin: 0 auto;
   border-radius: 50%;
-  background: #2c3033;
   z-index: -1;
+}
+
+.sec3 {
+  background: #e3e3e3;
+}
+.sec3 .portfolio_circle {
+  background: #ffffff;
+}
+
+.sec4 {
+  background: #e3e3e3;
+}
+.sec4 .portfolio_circle {
+  background: #ffffff;
+}
+
+.sec5 {
+  background: #e3e3e3;
+}
+.sec5 .portfolio_circle {
+  background: #ffffff;
 }
 
 .portfolio_wrap {
@@ -540,24 +559,28 @@ legend {
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
-.macbook {
+.port-images {
+  width: 60%;
+  height: 100%;
+}
+.port-images .macbook {
   position: absolute;
   top: 20%;
-  left: 5%;
+  left: 40%;
   width: 850px;
   z-index: 10;
 }
-.macbook img {
+.port-images .macbook img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.macbook .imgbx-mb {
+.port-images .macbook .imgbx-mb {
   position: absolute;
   top: 29px;
   left: 101px;
@@ -567,25 +590,32 @@ legend {
   transition: all 3s;
   z-index: 2;
 }
-.macbook .imgbx-mb:hover {
+.port-images .macbook .imgbx-mb:hover {
   background-position: bottom;
 }
-.macbook .mb1 {
+.port-images .macbook .mb1 {
   background: url(../../images/main/saint-pc.png) no-repeat 0 0;
   background-size: cover;
 }
-
-.iphone {
+.port-images .macbook .mb2 {
+  background: url(../../images/main/KT4-p.png) no-repeat 0 0;
+  background-size: cover;
+}
+.port-images .macbook .mb3 {
+  background: url(../../images/main/MONAMI.jpg) no-repeat 0 0;
+  background-size: cover;
+}
+.port-images .iphone {
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 83%;
   width: 180px;
   z-index: 11;
 }
-.iphone:hover .imgbx-ip {
+.port-images .iphone:hover .imgbx-ip {
   background-position: bottom;
 }
-.iphone img {
+.port-images .iphone img {
   position: relative;
   width: 100%;
   height: 100%;
@@ -593,7 +623,7 @@ legend {
      object-fit: cover;
   z-index: 2;
 }
-.iphone .imgbx-ip {
+.port-images .iphone .imgbx-ip {
   position: absolute;
   top: 8px;
   left: 10px;
@@ -603,23 +633,201 @@ legend {
   z-index: 1;
   transition: all 3s;
 }
-.iphone .ip1 {
+.port-images .iphone .ip1 {
   background: url(../../images/main/saint-m.jpg) no-repeat 0 0;
   background-size: cover;
 }
+.port-images .iphone .ip2 {
+  background: url(../../images/main/KT4-m.png) no-repeat 0 0;
+  background-size: cover;
+}
+.port-images .ipad {
+  position: absolute;
+  top: 44%;
+  left: 41%;
+  width: 500px;
+  z-index: 50;
+}
+.port-images .ipad:hover .imgbx-pad {
+  background-position: bottom;
+}
+.port-images .ipad img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 49;
+}
+.port-images .ipad .imgbx-pad {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  width: 469px;
+  height: 351px;
+  z-index: 1;
+  transition: all 3s;
+}
+.port-images .ipad .ipd2 {
+  background: url(../../images/main/KT4-t.png) no-repeat 0 0;
+  background-size: cover;
+}
 
-.port-left {
+.port-texts {
   width: 40%;
   height: 100%;
 }
-
-.port-right {
-  width: 50%;
+.port-texts .ti1 {
+  color: #000000;
+}
+.port-texts .ti2 {
+  color: #000000;
+}
+.port-texts .text-info {
+  width: 70%;
+}
+.port-texts .text-info .text-head {
+  position: absolute;
+  top: 18%;
+  left: 0;
+}
+.port-texts .text-info .text-head .pf-text {
+  padding-bottom: 20px;
+}
+.port-texts .text-info .text-head .pf-text span {
+  font-size: 18px;
+  font-weight: 200;
+}
+.port-texts .text-info .text-head .pf-logo {
+  width: 90%;
+  margin-bottom: 10px;
+}
+.port-texts .text-info .text-head .pf-logo img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.port-texts .text-info .pf-info {
+  position: absolute;
+  top: 33%;
+  left: 0;
+}
+.port-texts .text-info .pf-info li {
+  margin-bottom: 10px;
+}
+.port-texts .text-info .pf-info li .pf_info-title {
+  display: inline-block;
+  width: 150px;
+  font-weight: 700;
+}
+.port-texts .text-info .pf-info li .pf_info-info {
+  font-size: 16px;
+  font-weight: 300;
+}
+.port-texts .text-info .page-info {
+  position: absolute;
+  top: 52%;
+  left: 0;
+}
+.port-texts .text-info .page-info p {
+  width: 477px;
+}
+
+.pfb1 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  display: flex;
+  gap: 30px;
+}
+.pfb1 .but {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.pfb1 .but:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.pfb1 .but::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transition: 0.5s outline-color, 0.5s outline, 0.5s transform;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.25, 0.8);
+  transform: scale3d(1.1, 1.3, 0);
+  outline: 0px solid;
+  outline-color: rgba(255, 255, 255, 0.05);
+  outline-offset: -10px;
+}
+.pfb1 .but:hover::after {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  transform: scale(1);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.6);
+  outline-offset: 10px;
+  transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
+}
+
+.pfb2 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  display: flex;
+  gap: 30px;
+}
+.pfb2 .but {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.pfb2 .but:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.pfb2 .but::after {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  transition: 0.5s outline-color, 0.5s outline, 0.5s transform;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.25, 0.8);
+  transform: scale3d(1.1, 1.3, 0);
+  outline: 0px solid;
+  outline-color: rgba(255, 255, 255, 0.05);
+  outline-offset: -10px;
+}
+.pfb2 .but:hover::after {
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  transform: scale(1);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.6);
+  outline-offset: 10px;
+  transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
 }
 
 .fp-watermark {
   display: none;
+}
+
+div {
+  cursor: none;
 }
 
 [data-cursor] {
@@ -627,21 +835,14 @@ legend {
 }
 
 [data-cursor="0"] {
-  background-color: #25216d;
+  background-color: #000000;
   height: 5px;
   width: 5px;
 }
 
 [data-cursor="1"] {
-  border: 2px solid #25216d;
+  border: 2px solid #151515;
   height: 50px;
   width: 50px;
   transition: all 0.15s ease, left 0.3s ease, top 0.3s ease;
-}
-
-.cursor-hover--a [data-cursor="1"] {
-  height: 120px;
-  width: 120px;
-  mix-blend-mode: difference;
-  background-color: #25216d;
 }/*# sourceMappingURL=comm.css.map */

@@ -10,7 +10,7 @@
 }
 
 .sec1 {
-  background: #f2eee7;
+  background: #ffffff;
   #home {
     position: relative;
     height: 100vh;
@@ -136,7 +136,7 @@
   }
 }
 .sec2 {
-  background: #f2eee7;
+  background: #ffffff;
   #about {
     position: relative;
     width: 100%;
@@ -256,73 +256,8 @@
   }
 }
 
-// .portfolio {
-//   // background: linear-gradient(225deg, #343434, #1A1A1A);
-//   background-image: linear-gradient(2deg, #343434, black );
-//   .fp-overflow {
-//     width: 100%;
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-// }
-
-// .portfolio-wrap {
-//   .pf-section {
-//     position: relative;
-//     display: flex;
-//     width: 100vw;
-//     height: 80vh;
-//     overflow: hidden;
-//     margin: 0 auto;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     z-index: 1;
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       width: 100%;
-//       height: 100%;
-//       background: rgba(255, 255, 255, 0.5);
-
-//       backdrop-filter: blur(3px);
-//       z-index: -1;
-//     }
-//   }
-//   .pf-left {
-//     width: 50%;
-//     height: 70%;
-//     .slide-cover {
-//       height: 100%;
-//       .box {
-//         width: 100%;
-//         height: 100%;
-//         border-radius: 60px;
-//         overflow: hidden;
-//         background-position: top;
-//         transition: all 3s;
-//         &:hover {
-//           background-position: bottom;
-//         }
-//       }
-//       .box-1 {
-//         background: url(../../images/main/saint-pc.png) no-repeat 0 0;
-//         background-size: 100%;
-//       }
-//     }
-//   }
-//   .pf-right {
-//     width: 25%;
-//   }
-// }
-
-.sec4 {
+.pfs {
   position: relative;
-  background: #34393c;
   overflow: hidden;
   z-index: 1;
   .portfolio_circle {
@@ -334,10 +269,46 @@
     height: 100vh;
     margin: 0 auto;
     border-radius: 50%;
-    background: #2c3033;
     z-index: -1;
   }
 }
+// .sec3 {
+//   background: #34393c;
+//   .portfolio_circle {
+//     background: #2c3033;
+//   }
+// }
+// .sec4 {
+//   background: #34393c;
+//   .portfolio_circle {
+//     background: #2c3033;
+//   }
+// }
+// .sec5 {
+//   background: #34393c;
+//   .portfolio_circle {
+//     background: #2c3033;
+//   }
+// }
+.sec3 {
+  background: #e3e3e3;
+  .portfolio_circle {
+    background: #ffffff;
+  }
+}
+.sec4 {
+  background: #e3e3e3;
+  .portfolio_circle {
+    background: #ffffff;
+  }
+}
+.sec5 {
+  background: #e3e3e3;
+  .portfolio_circle {
+    background: #ffffff;
+  }
+}
+
 .portfolio_wrap {
   display: flex;
   position: relative;
@@ -345,79 +316,329 @@
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
-.macbook {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  width: 850px;
-  z-index: 10;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .imgbx-mb {
+.port-images {
+  width: 60%;
+  height: 100%;
+  .macbook {
     position: absolute;
-    top: 29px;
-    left: 101px;
-    width: 658px;
-    height: 428px;
-
-    background-position: top;
-    transition: all 3s;
-    z-index: 2;
-    &:hover {
-      background-position: bottom;
+    top: 20%;
+    left: 40%;
+    width: 850px;
+    z-index: 10;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .imgbx-mb {
+      position: absolute;
+      top: 29px;
+      left: 101px;
+      width: 658px;
+      height: 428px;
+      background-position: top;
+      transition: all 3s;
+      z-index: 2;
+      &:hover {
+        background-position: bottom;
+      }
+    }
+    .mb1 {
+      background: url(../../images/main/saint-pc.png) no-repeat 0 0;
+      background-size: cover;
+    }
+    .mb2 {
+      background: url(../../images/main/KT4-p.png) no-repeat 0 0;
+      background-size: cover;
+    }
+    .mb3 {
+      background: url(../../images/main/MONAMI.jpg) no-repeat 0 0;
+      background-size: cover;
     }
   }
-  .mb1 {
-    background: url(../../images/main/saint-pc.png) no-repeat 0 0;
-    background-size: cover;
-  }
-}
-.iphone {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 180px;
-  z-index: 11;
-  &:hover .imgbx-ip {
-    background-position: bottom;
-  }
-  img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-  }
-  .imgbx-ip {
+  .iphone {
     position: absolute;
-    top: 8px;
-    left: 10px;
-    width: 160px;
-    height: 345px;
-    border-radius: 15px;
-    z-index: 1;
-    transition: all 3s;
+    top: 40%;
+    left: 83%;
+    width: 180px;
+    z-index: 11;
+    &:hover .imgbx-ip {
+      background-position: bottom;
+    }
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 2;
+    }
+    .imgbx-ip {
+      position: absolute;
+      top: 8px;
+      left: 10px;
+      width: 160px;
+      height: 345px;
+      border-radius: 15px;
+      z-index: 1;
+      transition: all 3s;
+    }
+    .ip1 {
+      background: url(../../images/main/saint-m.jpg) no-repeat 0 0;
+      background-size: cover;
+    }
+    .ip2 {
+      background: url(../../images/main/KT4-m.png) no-repeat 0 0;
+      background-size: cover;
+    }
   }
-  .ip1 {
-    background: url(../../images/main/saint-m.jpg) no-repeat 0 0;
-    background-size: cover;
+  .ipad {
+    position: absolute;
+    top: 44%;
+    left: 41%;
+    width: 500px;
+    z-index: 50;
+    &:hover .imgbx-pad {
+      background-position: bottom;
+    }
+    img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 49;
+    }
+    .imgbx-pad {
+      position: absolute;
+      top: 17px;
+      left: 16px;
+      width: 469px;
+      height: 351px;
+      z-index: 1;
+      transition: all 3s;
+    }
+    .ipd2 {
+      background: url(../../images/main/KT4-t.png) no-repeat 0 0;
+      background-size: cover;
+    }
   }
 }
 
-.port-left {
+.port-texts {
   width: 40%;
   height: 100%;
+  .ti1 {
+    color: #000000;
+  }
+  .ti2 {
+    color: #000000;
+  }
+  .text-info {
+    width: 70%;
+    .text-head {
+      position: absolute;
+      top: 18%;
+      left: 0;
+      .pf-text {
+        padding-bottom: 20px;
+        span {
+          font-size: 18px;
+          font-weight: 200;
+        }
+      }
+      .pf-logo {
+        width: 90%;
+        margin-bottom: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .pf-info {
+      position: absolute;
+      top: 33%;
+      left: 0;
+      li {
+        margin-bottom: 10px;
+        .pf_info-title {
+          display: inline-block;
+          width: 150px;
+          font-weight: 700;
+        }
+        .pf_info-info {
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+    .page-info {
+      position: absolute;
+      top: 52%;
+      left: 0;
+      p {
+        width: 477px;
+      }
+    }
+  }
 }
-.port-right {
-  width: 50%;
-  height: 100%;
+
+// .pfb1 {
+//   position: absolute;
+//   top: 70%;
+//   left: 0;
+//   display: flex;
+//   gap: 30px;
+
+//   .but {
+//     position: relative;
+//     width: 130px;
+//     height: 50px;
+//     color: #fff;
+//     border: 1px solid #fff;
+//     // overflow: hidden;
+
+//     &:hover {
+//       text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+//       box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+//         0 0 20px rgba(255, 255, 255, 0.2);
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       top: -10px;
+//       left: -10px;
+//       right: -10px;
+//       bottom: -10px;
+//       transition: 0.5s outline-color, 0.5s outline, 0.5s transform;
+//       transition-timing-function: cubic-bezier(0.2, 0.8, 0.25, 0.8);
+//       transform: scale3d(1.1, 1.3, 0);
+//       outline: 0px solid;
+//       outline-color: rgba(255, 255, 255, 0.05);
+//       outline-offset: -10px;
+//     }
+
+//     &:hover::after {
+//       top: 10px;
+//       left: 10px;
+//       right: 10px;
+//       bottom: 10px;
+//       transform: scale(1);
+//       outline: 1px solid;
+//       outline-color: rgba(255, 255, 255, 0.6);
+//       outline-offset: 10px;
+//       transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8),
+//         0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8),
+//         0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
+//     }
+//   }
+// }
+.pfb1 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  display: flex;
+  gap: 30px;
+
+  .but {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    color: #000000;
+    border: 1px solid #000000;
+    // overflow: hidden;
+
+    &:hover {
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      transition: 0.5s outline-color, 0.5s outline, 0.5s transform;
+      transition-timing-function: cubic-bezier(0.2, 0.8, 0.25, 0.8);
+      transform: scale3d(1.1, 1.3, 0);
+      outline: 0px solid;
+      outline-color: rgba(255, 255, 255, 0.05);
+      outline-offset: -10px;
+    }
+
+    &:hover::after {
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      transform: scale(1);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.6);
+      outline-offset: 10px;
+      transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8),
+        0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8),
+        0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
+    }
+  }
+}
+.pfb2 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  display: flex;
+  gap: 30px;
+
+  .but {
+    position: relative;
+    width: 130px;
+    height: 50px;
+    color: #000000;
+    border: 1px solid #000000;
+    // overflow: hidden;
+
+    &:hover {
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      transition: 0.5s outline-color, 0.5s outline, 0.5s transform;
+      transition-timing-function: cubic-bezier(0.2, 0.8, 0.25, 0.8);
+      transform: scale3d(1.1, 1.3, 0);
+      outline: 0px solid;
+      outline-color: rgba(255, 255, 255, 0.05);
+      outline-offset: -10px;
+    }
+
+    &:hover::after {
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      transform: scale(1);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.6);
+      outline-offset: 10px;
+      transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8),
+        0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8),
+        0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
+    }
+  }
 }
 
 .fp-watermark {
@@ -425,7 +646,7 @@
 }
 
 div {
-  // cursor: none;
+  cursor: none;
 }
 
 [data-cursor] {
@@ -433,21 +654,14 @@ div {
 }
 
 [data-cursor="0"] {
-  background-color: #25216d;
+  background-color: #000000;
   height: 5px;
   width: 5px;
 }
 
 [data-cursor="1"] {
-  border: 2px solid #25216d;
+  border: 2px solid #151515;
   height: 50px;
   width: 50px;
   transition: all 0.15s ease, left 0.3s ease, top 0.3s ease;
-}
-
-.cursor-hover--a [data-cursor="1"] {
-  height: 120px;
-  width: 120px;
-  mix-blend-mode: difference;
-  background-color: #25216d;
 }
