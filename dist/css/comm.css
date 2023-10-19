@@ -594,11 +594,11 @@ legend {
   background-position: bottom;
 }
 .port-images .macbook .mb1 {
-  background: url(../../images/main/saint-pc.png) no-repeat 0 0;
+  background: url(../../images/main/saint-pc.jpg) no-repeat 0 0;
   background-size: cover;
 }
 .port-images .macbook .mb2 {
-  background: url(../../images/main/KT4-p.png) no-repeat 0 0;
+  background: url(../../images/main/KT4-p.jpg) no-repeat 0 0;
   background-size: cover;
 }
 .port-images .macbook .mb3 {
@@ -638,7 +638,7 @@ legend {
   background-size: cover;
 }
 .port-images .iphone .ip2 {
-  background: url(../../images/main/KT4-m.png) no-repeat 0 0;
+  background: url(../../images/main/KT4-m.jpg) no-repeat 0 0;
   background-size: cover;
 }
 .port-images .ipad {
@@ -669,7 +669,7 @@ legend {
   transition: all 3s;
 }
 .port-images .ipad .ipd2 {
-  background: url(../../images/main/KT4-t.png) no-repeat 0 0;
+  background: url(../../images/main/KT4-t.jpg) no-repeat 0 0;
   background-size: cover;
 }
 
@@ -820,6 +820,15 @@ legend {
   outline-color: rgba(255, 255, 255, 0.6);
   outline-offset: 10px;
   transition: 0.5s outline-offset cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline-color cubic-bezier(0.2, 0.8, 0.25, 0.8), 0.5s outline cubic-bezier(0.2, 0.8, 0.25, 0.8);
+}
+
+.fp-tooltip {
+  color: #4e4e4e !important;
+}
+
+.fp-tooltip.fp-right {
+  font-weight: 600 !important;
+  font-size: 14px !important;
 }
 
 .fp-watermark {

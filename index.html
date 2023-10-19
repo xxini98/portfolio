@@ -90,7 +90,7 @@
   <body>
     <!-- logo 왼쪽 type -->
     <div id="fullpage">
-      <div class="section sec1">
+      <div class="section sec1" data-tooltip="INTRO" data-anchor="intro">
         <div id="home">
           <div class="home-wrap">
             <div class="blob">
@@ -163,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="section sec2">
+      <div class="section sec2" data-tooltip="ABOUT ME" data-anchor="aboutme">
         <div id="about">
           <div class="about-wrap">
             <div class="bubble-wrap" data-aos="fade-down" data-aos-once="false">
@@ -285,8 +285,11 @@
           </div>
         </div>
       </div>
-
-      <div class="section pfs sec3">
+      <div
+        class="section pfs sec3"
+        data-tooltip="SAINT LAURENT"
+        data-anchor="saintlaurent"
+      >
         <div class="portfolio_circle pc1"></div>
         <div class="portfolio_wrap">
           <div class="port-texts">
@@ -347,7 +350,11 @@
           </div>
         </div>
       </div>
-      <div class="section pfs sec4">
+      <div
+        class="section pfs sec4"
+        data-tooltip="KTOWN4U"
+        data-anchor="ktwon4u"
+      >
         <div class="portfolio_circle pc1"></div>
         <div class="portfolio_wrap">
           <div class="port-texts">
@@ -381,7 +388,11 @@
               </ul>
               <div class="page-info">
                 <p>
-                  기존 웹사이트를 혁신적으로 개편하여 사용자 경험을 향상시켰습니다. 이 프로젝트는 CAFE24를 기반으로 제작되었으며, 사용자들이 직접 글을 작성하고 로그인할 수 있도록 했습니다. 또한, 메인 페이지의 상단에 CD 모양의 UI를 배치하여 음반 판매 사이트임을 시각적으로 강조했습니다.
+                  기존 웹사이트를 혁신적으로 개편하여 사용자 경험을
+                  향상시켰습니다. 이 프로젝트는 CAFE24를 기반으로 제작되었으며,
+                  사용자들이 직접 글을 작성하고 로그인할 수 있도록 했습니다.
+                  또한, 메인 페이지의 상단에 CD 모양의 UI를 배치하여 음반 판매
+                  사이트임을 시각적으로 강조했습니다.
                 </p>
               </div>
               <div class="pf-button pfb2">
@@ -407,7 +418,7 @@
           </div>
         </div>
       </div>
-      <div class="section pfs sec5">
+      <div class="section pfs sec5" data-tooltip="MONAMI" data-anchor="monami">
         <div class="portfolio_circle pc1"></div>
         <div class="portfolio_wrap">
           <div class="port-texts">
@@ -432,7 +443,7 @@
                 </li>
                 <li class="process">
                   <span class="pf_info-title">PROCESS</span>
-                  <span class="pf_info-info">ScrollTrigger AOS</span>
+                  <span class="pf_info-info">ScrollTrigger(GSAP) AOS.js</span>
                 </li>
                 <li class="project">
                   <span class="pf_info-title">참여도</span>
@@ -441,7 +452,11 @@
               </ul>
               <div class="page-info">
                 <p>
-                  기존 웹사이트를 혁신적으로 개편하여 사용자 경험을 향상시켰습니다. 이 프로젝트는 CAFE24를 기반으로 제작되었으며, 사용자들이 직접 글을 작성하고 로그인할 수 있도록 했습니다. 또한, 메인 페이지의 상단에 CD 모양의 UI를 배치하여 음반 판매 사이트임을 시각적으로 강조했습니다.
+                  기존 웹사이트를 혁신적으로 개편하여 사용자 경험을
+                  향상시켰습니다. 이 프로젝트는 CAFE24를 기반으로 제작되었으며,
+                  사용자들이 직접 글을 작성하고 로그인할 수 있도록 했습니다.
+                  또한, 메인 페이지의 상단에 CD 모양의 UI를 배치하여 음반 판매
+                  사이트임을 시각적으로 강조했습니다.
                 </p>
               </div>
               <div class="pf-button pfb2">
@@ -456,7 +471,6 @@
               <img src="./images/main/macbook.png" alt="macbook" />
               <div class="imgbx-mb mb3"></div>
             </div>
-         
           </div>
         </div>
       </div>
@@ -466,6 +480,8 @@
     <script>
       AOS.init();
 
+      console.clear();
+
       new fullpage("#fullpage", {
         //options here
         autoScrolling: true,
@@ -473,7 +489,10 @@
         navigation: true,
         scrollingSpeed: 700,
         controlArrows: false,
+        anchors: ["firstPage", "secondPage", "thirdPage"],
         keyboardScrolling: true,
+        // navigationPosition: "left",
+        showActiveTooltip: true,
         slidesNavigation: true,
         dropEffect: true,
 
