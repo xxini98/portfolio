@@ -271,11 +271,10 @@ legend {
 
 .wrap {
   font-family: "Pretendard";
-  background: #f9f3e8;
 }
 
 .sec1 {
-  background: #ffffff;
+  background: #f4f4f4;
 }
 .sec1 #home {
   position: relative;
@@ -396,7 +395,7 @@ legend {
 }
 
 .sec2 {
-  background: #ffffff;
+  background: #f4f4f4;
 }
 .sec2 #about {
   position: relative;
@@ -532,24 +531,24 @@ legend {
 }
 
 .sec3 {
-  background: #f5f5f5;
+  background: #f4f4f4;
 }
 .sec3 .portfolio_circle {
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
 .sec4 {
-  background: #f5f5f5;
+  background: #f4f4f4;
 }
 .sec4 .portfolio_circle {
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
 .sec5 {
-  background: #f5f5f5;
+  background: #f4f4f4;
 }
 .sec5 .portfolio_circle {
-  background: #ffffff;
+  background: #f4f4f4;
 }
 
 .portfolio_wrap {
@@ -835,6 +834,51 @@ legend {
   display: none;
 }
 
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: #999999;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 12px;
+  height: 12px;
+  background-image: linear-gradient(to right, #feea71 0%, #fdcb6e 100%);
+  background-size: 1600% 1600%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 50;
+  transition: 0.15s linear;
+  animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
+}
+
+@keyframes blobRadius {
+  0%, 100% {
+    border-radius: 43% 77% 80% 40%/40% 40% 80% 80%;
+  }
+  20% {
+    border-radius: 47% 73% 61% 59%/47% 75% 45% 73%;
+  }
+  40% {
+    border-radius: 46% 74% 74% 46%/74% 58% 62% 46%;
+  }
+  60% {
+    border-radius: 47% 73% 61% 59%/40% 40% 80% 80%;
+  }
+  80% {
+    border-radius: 50% 70% 52% 68%/51% 61% 59% 69%;
+  }
+}
+@keyframes blobBackground {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
 div {
   cursor: none;
 }
