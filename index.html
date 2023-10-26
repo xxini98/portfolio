@@ -76,7 +76,7 @@
     <div id="fullpage">
       <div class="section sec1" data-tooltip="INTRO" data-anchor="intro">
         <div id="home">
-          <div class="home-wrap">
+          <!-- <div class="home-wrap">
             <div class="blob">
               <svg
                 viewBox="0 0 500 500"
@@ -135,13 +135,44 @@
                     박진희입니다!</span
                   >
                 </div>
-                <!-- <span class="tw text-etc guide">본 페이지는 상업적 목적이 아닌 개인 포트폴리용으로 만들어진 사이트입니다.</span>
-                  <span class="tw  text-etc copyright">PARKJINHEE©2023 PORTFOLIO</span> -->
               </div>
               <div class="scroll-down">
                 <span></span>
                 <span></span>
                 <span></span>
+              </div>
+            </div>
+          </div> -->
+          <div class="menu" id="menu">
+            <li><a href="#">ACCUEIL</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">MY WORKS</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+          </div>
+          <div class="container gradient-purple-blue">
+            <div class="under-container bubble" style="height: 90vh">
+              <div class="line">
+                <div class="square" id="square">H</div>
+                <div class="square">e</div>
+                <div class="square">l</div>
+                <div class="square">l</div>
+                <div class="square">o</div>
+                <div class="square" style="margin-left: 30px">I</div>
+                <div class="square">'</div>
+                <div class="square">m</div>
+              </div>
+              <div class="line">
+                <div class="square">J</div>
+                <div class="square">I</div>
+                <div class="square">N</div>
+                <div class="square">H</div>
+                <div class="square">E</div>
+                <div class="square">E</div>
+              </div>
+            </div>
+            <div class="under-container" style="height: 10vh">
+              <div class="mouse">
+                <div class="molette"></div>
               </div>
             </div>
           </div>
@@ -437,7 +468,7 @@
               <div class="text-head">
                 <div class="pf-text pft1">
                   <span
-                    >사용자 에이전트(User Agent) 기반 리다이렉션 [PC, MOB]</span
+                    >사용자 에이전트(User Agent) 기반 리다이렉션 [PC MOB]</span
                   >
                 </div>
                 <div class="pf-logo pfl1">
@@ -581,6 +612,21 @@
     </div>
 
     <script>
+      var square = document.getElementsByClassName("square");
+
+      for (var i = 0; i < square.length; i++) {
+        square[i].addEventListener("mouseenter", function () {
+          this.classList.add("rubberBand");
+          this.addEventListener(
+            "animationend",
+            function () {
+              this.classList.remove("rubberBand");
+            },
+            false
+          );
+        });
+      }
+
       AOS.init();
 
       console.clear();
