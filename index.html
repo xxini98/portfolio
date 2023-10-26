@@ -72,85 +72,59 @@
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
+    <header id="header">
+      <div class="menu" id="menu">
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#aboutme">ABOUT ME</a></li>
+        <li><a href="#">JINHEE</a></li>
+        <li><a href="#ktwon4u">PORTFOLIO</a></li>
+        <li><a href="#contactme">CONTACT ME</a></li>
+      </div>
+    </header>
     <!-- logo 왼쪽 type -->
     <div id="fullpage">
       <div class="section sec1" data-tooltip="INTRO" data-anchor="intro">
         <div id="home">
-          <!-- <div class="home-wrap">
-            <div class="blob">
-              <svg
-                viewBox="0 0 500 500"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100%"
-                height="100%"
-                id="blobSvg"
-              >
-                <defs>
-                  <linearGradient
-                    id="gradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="0%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" style="stop-color: #feea71"></stop>
-                    <stop offset="100%" style="stop-color: #fdcb6e"></stop>
-                  </linearGradient>
-                </defs>
-                <path fill="url(#gradient)">
-                  <animate
-                    attributeName="d"
-                    dur="4000ms"
-                    repeatCount="indefinite"
-                    values="M427.80627,351.89738Q367.45621,453.79476,258.41872,439.46463Q149.38123,425.1345,77.40596,337.56725Q5.4307,250,83.38477,172.79251Q161.33885,95.58502,246.45468,102.17823Q331.5705,108.77144,409.86342,179.38572Q488.15633,250,427.80627,351.89738Z;
-    
-                      M371.74502,321.79737Q332.79697,393.59474,237.34813,415.09793Q141.89928,436.60112,96.40167,343.30056Q50.90406,250,110.90247,181.5008Q170.90088,113.00159,267.20183,83.49841Q363.50279,53.99522,387.09793,151.99761Q410.69307,250,371.74502,321.79737Z;
-    
-                      M390.14928,327.98049Q339.42854,405.96099,253.01294,399.70133Q166.59733,393.44168,119.35709,321.72084Q72.11684,250,102.62341,148.37022Q133.12997,46.74044,240.58449,63.48706Q348.03901,80.23368,394.45452,165.11684Q440.87003,250,390.14928,327.98049Z;
-    
-                      M425.5,343Q357,436,264,411.5Q171,387,100.5,318.5Q30,250,84.5,154Q139,58,252.5,54Q366,50,430,150Q494,250,425.5,343Z;
-  
-                      M427.80627,351.89738Q367.45621,453.79476,258.41872,439.46463Q149.38123,425.1345,77.40596,337.56725Q5.4307,250,83.38477,172.79251Q161.33885,95.58502,246.45468,102.17823Q331.5705,108.77144,409.86342,179.38572Q488.15633,250,427.80627,351.89738Z;
-                    "
-                  ></animate>
-                </path>
-              </svg>
-              <div class="text-wrap">
-                <div class="tw text-hello">
-                  <span>HI! I'm</span>
-                </div>
-                <div class="text-reveal">
-                  <span class="tw reveal-types name-re">Jin Hee</span>
-                </div>
-                <div class="tw welcome">
-                  <span>Welcome To</span>
-                </div>
-                <div class="text-reveal">
-                  <span class="tw reveal-types pf-re">My Portfolio</span>
-                </div>
-                <div class="tw text-etc text-intro">
-                  <span
-                    >안녕하세요! 매일 성장하고 있는 신입 웹 퍼블리셔
-                    박진희입니다!</span
-                  >
-                </div>
-              </div>
-              <div class="scroll-down">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div> -->
-          <div class="menu" id="menu">
-            <li><a href="#">ACCUEIL</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">MY WORKS</a></li>
-            <li><a href="#">CONTACT ME</a></li>
-          </div>
-          <div class="container gradient-purple-blue">
+          <div class="container-index gradient-purple-blue">
             <div class="under-container bubble" style="height: 90vh">
+              <svg
+              viewBox="0 0 500 500"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="100%"
+              height="100%"
+              id="blobSvg"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%"
+                >
+                  <stop offset="0%" style="stop-color: #feea71"></stop>
+                  <stop offset="100%" style="stop-color: #fdcb6e"></stop>
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)">
+                <animate
+                  attributeName="d"
+                  dur="4000ms"
+                  repeatCount="indefinite"
+                  values="M427.80627,351.89738Q367.45621,453.79476,258.41872,439.46463Q149.38123,425.1345,77.40596,337.56725Q5.4307,250,83.38477,172.79251Q161.33885,95.58502,246.45468,102.17823Q331.5705,108.77144,409.86342,179.38572Q488.15633,250,427.80627,351.89738Z;
+  
+                    M371.74502,321.79737Q332.79697,393.59474,237.34813,415.09793Q141.89928,436.60112,96.40167,343.30056Q50.90406,250,110.90247,181.5008Q170.90088,113.00159,267.20183,83.49841Q363.50279,53.99522,387.09793,151.99761Q410.69307,250,371.74502,321.79737Z;
+  
+                    M390.14928,327.98049Q339.42854,405.96099,253.01294,399.70133Q166.59733,393.44168,119.35709,321.72084Q72.11684,250,102.62341,148.37022Q133.12997,46.74044,240.58449,63.48706Q348.03901,80.23368,394.45452,165.11684Q440.87003,250,390.14928,327.98049Z;
+  
+                    M425.5,343Q357,436,264,411.5Q171,387,100.5,318.5Q30,250,84.5,154Q139,58,252.5,54Q366,50,430,150Q494,250,425.5,343Z;
+
+                    M427.80627,351.89738Q367.45621,453.79476,258.41872,439.46463Q149.38123,425.1345,77.40596,337.56725Q5.4307,250,83.38477,172.79251Q161.33885,95.58502,246.45468,102.17823Q331.5705,108.77144,409.86342,179.38572Q488.15633,250,427.80627,351.89738Z;
+                  "
+                ></animate>
+              </path>
+            </svg>
               <div class="line">
                 <div class="square" id="square">H</div>
                 <div class="square">e</div>
@@ -547,7 +521,7 @@
           </div>
         </div>
       </div>
-      <div
+      <!-- <div
         class="section pfs sec3"
         data-tooltip="CONTACT ME"
         data-anchor="contactme"
@@ -608,7 +582,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <script>
