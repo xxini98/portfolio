@@ -82,11 +82,13 @@
   <body>
     <header id="header">
       <div class="menu" id="menu">
-        <li><a href="#intro">INTRO</a></li>
-        <li><a href="#aboutme">ABOUT ME</a></li>
-        <li><img src="./images/main/J!N_HEE.svg" alt="logo" /></li>
-        <li><a href="#ktwon4u">PORTFOLIO</a></li>
-        <li><a href="#contactme">CONTACT ME</a></li>
+        <li class="depth1"><a href="#intro">INTRO</a></li>
+        <li class="depth2"><a href="#aboutme">ABOUT ME</a></li>
+        <li class="depth3">
+          <img src="./images/main/J!N_HEE.svg" alt="logo" />
+        </li>
+        <li class="depth4"><a href="#ktwon4u">PORTFOLIO</a></li>
+        <li class="depth5"><a href="#contactme">CONTACT ME</a></li>
       </div>
     </header>
     <!-- logo 왼쪽 type -->
@@ -644,12 +646,12 @@
         },
       });
 
-      document.addEventListener("DOMContentLoaded", () => {
-        new window["Cursor"]({
-          count: 2,
-          targets: ["a"],
-        });
-      });
+      // document.addEventListener("DOMContentLoaded", () => {
+      //   new window["Cursor"]({
+      //     count: 2,
+      //     targets: ["a"],
+      //   });
+      // });
     </script>
   </body>
 </html>
