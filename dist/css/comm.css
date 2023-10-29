@@ -34,6 +34,7 @@ article {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pretendard";
 }
 
 fieldset,
@@ -270,6 +271,7 @@ legend {
 }
 
 .wrap {
+  background: #f4f4f4;
   font-family: "Pretendard";
 }
 
@@ -466,7 +468,7 @@ legend {
   margin-bottom: 10px;
 }
 .sec2 .about-txt-wrap .abtxt .about-intro {
-  line-height: 30px;
+  line-height: 35px;
   color: #151515;
 }
 .sec2 .about_tab-wrap {
@@ -535,41 +537,7 @@ legend {
   margin-bottom: 15px;
 }
 
-.pfs {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.pfs .portfolio_circle {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150vw;
-  height: 100vh;
-  margin: 0 auto;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-.sec3 {
-  background: #f4f4f4;
-}
-.sec3 .portfolio_circle {
-  background: #f4f4f4;
-}
-
-.sec4 {
-  background: #f4f4f4;
-}
-.sec4 .portfolio_circle {
-  background: #f4f4f4;
-}
-
-.sec5 {
-  background: #f4f4f4;
-}
-.sec5 .portfolio_circle {
+.section {
   background: #f4f4f4;
 }
 
@@ -583,118 +551,43 @@ legend {
   justify-content: space-between;
   align-items: center;
 }
-
-.port-images {
+.portfolio_wrap .port-img {
+  display: flex;
+  align-items: center;
   width: 60%;
   height: 100%;
 }
-.port-images .macbook {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  width: 850px;
-  z-index: 10;
+.portfolio_wrap .port-img .imges-wrap {
+  width: 90%;
+  height: 60%;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
-.port-images .macbook img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.port-images .macbook .imgbx-mb {
-  position: absolute;
-  top: 29px;
-  left: 101px;
-  width: 658px;
-  height: 428px;
-  background-position: top;
-  transition: all 3s;
-  z-index: 2;
-}
-.port-images .macbook .imgbx-mb:hover {
+.portfolio_wrap .port-img .imges-wrap:hover .imgs {
   background-position: bottom;
 }
-.port-images .macbook .mb1 {
-  background: url(../../images/main/saint-pc.jpg) no-repeat 0 0;
-  background-size: cover;
+.portfolio_wrap .port-img .imges-wrap .imgs {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-position: top;
+  transition: all 3s;
 }
-.port-images .macbook .mb2 {
+.portfolio_wrap .port-img .imges-wrap .kt4 {
   background: url(../../images/main/KT4-p.jpg) no-repeat 0 0;
   background-size: cover;
 }
-.port-images .macbook .mb3 {
-  background: url(../../images/main/MONAMI.jpg) no-repeat 0 0;
+.portfolio_wrap .port-img .imges-wrap .monami {
+  background: url(../../images/main/monami0.jpg) no-repeat 0 0;
   background-size: cover;
 }
-.port-images .iphone {
-  position: absolute;
-  top: 40%;
-  left: 83%;
-  width: 180px;
-  z-index: 11;
-}
-.port-images .iphone:hover .imgbx-ip {
-  background-position: bottom;
-}
-.port-images .iphone img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 2;
-}
-.port-images .iphone .imgbx-ip {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  width: 160px;
-  height: 345px;
-  border-radius: 15px;
-  z-index: 1;
-  transition: all 3s;
-}
-.port-images .iphone .ip1 {
-  background: url(../../images/main/saint-m.jpg) no-repeat 0 0;
-  background-size: cover;
-}
-.port-images .iphone .ip2 {
-  background: url(../../images/main/KT4-m.jpg) no-repeat 0 0;
-  background-size: cover;
-}
-.port-images .ipad {
-  position: absolute;
-  top: 44%;
-  left: 41%;
-  width: 500px;
-  z-index: 50;
-}
-.port-images .ipad:hover .imgbx-pad {
-  background-position: bottom;
-}
-.port-images .ipad img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 49;
-}
-.port-images .ipad .imgbx-pad {
-  position: absolute;
-  top: 17px;
-  left: 16px;
-  width: 469px;
-  height: 351px;
-  z-index: 1;
-  transition: all 3s;
-}
-.port-images .ipad .ipd2 {
-  background: url(../../images/main/KT4-t.jpg) no-repeat 0 0;
+.portfolio_wrap .port-img .imges-wrap .saint {
+  background: url(../../images/main/saint-pc.jpg) no-repeat 0 0;
   background-size: cover;
 }
 
 .port-texts {
+  position: relative;
   width: 40%;
   height: 100%;
 }
@@ -713,14 +606,14 @@ legend {
   left: 0;
 }
 .port-texts .text-info .text-head .pf-text {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .port-texts .text-info .text-head .pf-text span {
   font-size: 18px;
   font-weight: 200;
 }
 .port-texts .text-info .text-head .pf-logo {
-  width: 90%;
+  width: 85%;
   margin-bottom: 10px;
 }
 .port-texts .text-info .text-head .pf-logo img {
@@ -748,23 +641,23 @@ legend {
 }
 .port-texts .text-info .page-info {
   position: absolute;
-  top: 52%;
+  top: 55%;
   left: 0;
 }
 .port-texts .text-info .page-info p {
-  width: 477px;
+  width: 90%;
 }
 
 .pfb1 {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 0;
   display: flex;
   gap: 10px;
 }
 .pfb1 .but {
   position: relative;
-  width: 130px;
+  width: 8vw;
   height: 50px;
   color: #000000;
   border: 1px solid #000000;
@@ -801,14 +694,14 @@ legend {
 
 .pfb2 {
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 0;
   display: flex;
   gap: 30px;
 }
 .pfb2 .but {
   position: relative;
-  width: 130px;
+  width: 9vw;
   height: 50px;
   color: #000000;
   border: 1px solid #000000;
@@ -901,10 +794,6 @@ legend {
     background-position: 100% 50%;
   }
 }
-div {
-  cursor: none;
-}
-
 [data-cursor] {
   border-radius: 50%;
 }
@@ -1120,6 +1009,16 @@ div {
   .sec1 .square {
     font-size: 92px;
   }
+  .port-texts .text-info .pf-info {
+    top: 35%;
+  }
+  .port-texts .text-info .page-info {
+    top: 58%;
+  }
+  .pfb1,
+  .pfb2 {
+    top: 80%;
+  }
 }
 @media screen and (max-width: 1440px) {
   .sec1 #blobSvg {
@@ -1131,6 +1030,52 @@ div {
   .sec2 .about-wrap {
     max-width: 1280px;
   }
+  .portfolio_wrap {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .port-images .macbook {
+    transform: scale(0.75);
+  }
+  .port-images .iphone {
+    transform: scale(0.75);
+  }
+  .port-images .ipad {
+    transform: scale(0.75);
+    top: 40%;
+  }
+  .port-texts .text-info .pf-info {
+    top: 35%;
+  }
+  .pfb1,
+  .pfb2 {
+    top: 80%;
+  }
+  .pfb1 .but {
+    width: 105px;
+    font-size: 15px;
+  }
+  .sec2 .bubble-wrap .bpb {
+    width: 500px;
+  }
+  .sec5 .port-images .macbook {
+    top: 19%;
+  }
+  .sec3 .port-images .iphone {
+    left: 80%;
+  }
+  .port-texts .text-info .text-head .pf-text span {
+    font-size: 16px;
+  }
+  .port-texts .text-info .pf-info li .pf_info-info {
+    font-size: 15px;
+  }
+  .port-texts .text-info .page-info p {
+    font-size: 14px;
+  }
+  .port-texts .text-info .text-head .pf-logo {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 1280px) {
   .sec2 .about-wrap {
@@ -1138,10 +1083,37 @@ div {
     padding: 0% 5%;
   }
   .sec2 .bubble-wrap .bpb {
-    width: 120%;
+    width: 100%;
   }
   .sec2 .about-txt-wrap {
     width: 46%;
+  }
+  .portfolio_wrap {
+    width: auto;
+    padding: 0 5%;
+  }
+  .port-texts {
+    position: relative;
+  }
+  .port-texts .text-info .text-head .pf-text span {
+    font-size: 16px;
+  }
+  .port-texts .text-info .pf-info li .pf_info-info {
+    font-size: 15px;
+  }
+  .port-texts .text-info .page-info {
+    top: 58%;
+  }
+  .port-texts .text-info .page-info p {
+    font-size: 14px;
+  }
+  .pfb1,
+  .pfb2 {
+    top: 79%;
+  }
+  .pfb1 .but {
+    width: 100px;
+    font-size: 14px;
   }
   #fp-nav ul li:hover .fp-tooltip,
   #fp-nav.fp-show-active a.active + .fp-tooltip {
@@ -1155,14 +1127,36 @@ div {
   .sec1 .square {
     font-size: 85px;
   }
-  .sec2 .bubble-wrap .bpb {
-    width: 110%;
-  }
   .sec2 .about-txt-wrap .abtxt .about-me {
     font-size: 25px;
   }
+  .sec2 .about-txt-wrap .abtxt .about-intro {
+    font-size: 14px;
+  }
   .sec2 .about-txt-wrap {
     width: 51%;
+  }
+  .sec4 .port-images .macbook {
+    transform: scale(0.6);
+    top: 20%;
+    left: 30%;
+  }
+  .sec4 .port-images .iphone {
+    transform: scale(0.6);
+  }
+  .port-texts .text-info .page-info p {
+    font-size: 14px;
+    width: 100%;
+  }
+  .portfolio_wrap .port-img .imges-wrap .kt4 {
+    background: url(../../images/main/KT4-t.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .port-texts {
+    width: 60%;
+  }
+  #fp-nav {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1176,22 +1170,75 @@ div {
     transform: scale(0.8);
   }
   .sec1 .square {
-    font-size: 12vw;
+    font-size: 10vw;
   }
   #about {
     overflow: hidden;
   }
   .sec2 .about-wrap {
     flex-direction: column;
+    justify-content: center;
+  }
+  .sec2 .bubble-wrap .bpb {
+    width: 90%;
+    top: 60%;
+  }
+  .sec2 .bubble-wrap .blob-bg {
+    top: 50%;
   }
   .sec2 .bubble-wrap {
     width: 50%;
-    height: 50%;
-  }
-  .sec2 .about-txt-wrap {
     height: 40%;
   }
-  #fp-nav {
+  .sec2 .about-txt-wrap {
+    width: 80%;
+    height: 25%;
+    margin-top: 50px;
+  }
+  .page-info {
     display: none;
+  }
+  .portfolio_wrap {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .portfolio_wrap .port-img {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+  }
+  .port-texts {
+    width: 100%;
+    height: 30%;
+  }
+  .portfolio_wrap .port-img .imges-wrap {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .depth1,
+  .depth2,
+  .depth4,
+  .depth5 {
+    display: block;
+  }
+  .sec2 .bubble-wrap {
+    height: 30%;
+  }
+  .sec2 .about-txt-wrap {
+    margin-top: 0;
+  }
+  .sec2 .bubble-wrap .bpb {
+    width: 150%;
+  }
+  .sec2 .bubble-wrap .blob-bg {
+    width: 75vw;
+    top: 30%;
+  }
+  .sec2 .about-txt-wrap .abtxt .about-me {
+    font-size: 20px;
+  }
+  .sec2 .about-txt-wrap .abtxt .about-intro {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=comm.css.map */
