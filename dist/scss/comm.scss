@@ -335,9 +335,11 @@
     margin-bottom: 15px;
   }
 }
-.section {
+
+.pfs {
   background: #f4f4f4;
 }
+
 .portfolio_wrap {
   display: flex;
   position: relative;
@@ -1051,16 +1053,22 @@
     width: 30%;
     flex-direction: column;
     align-items: center;
-
   }
   .pfb2 .but {
     width: 100%;
   }
-  .sec4 .pfb2  {
+  .sec4 .pfb2 {
     left: 66%;
   }
   .sec4 .pfb2 .but {
     width: 90%;
+  }
+  .port-texts .text-info {
+    width: 60%;
+  }
+  .port-texts .text-info .pf-info li {
+    display: flex;
+    align-items: center;
   }
   .port-texts .text-info .pf-info li .pf_info-title {
     width: 100px;
