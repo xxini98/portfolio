@@ -225,9 +225,8 @@
   .about-wrap {
     display: flex;
     max-width: 1440px;
-    // width: calc(100% - 10%);
-    height: 100%;
-    margin: 0 auto;
+    height: 100vh;
+    margin: auto 0;
     align-items: center;
     justify-content: space-evenly;
   }
@@ -344,8 +343,8 @@
   display: flex;
   position: relative;
   width: 1440px;
-  height: 100vh;
-  margin: 0 auto;
+  height: calc(100% - 85px);
+  margin: 85px auto 0;
   overflow: hidden;
   justify-content: space-between;
   align-items: center;
@@ -398,7 +397,7 @@
     color: #000000;
   }
   .text-info {
-    width: 70%;
+    width: 100%;
     height: 100%;
     .text-head {
       position: absolute;
@@ -817,6 +816,9 @@
   height: 20px;
   margin: 0 5px;
 }
+.fp-overflow {
+  height: 100vh;
+}
 
 @media screen and (max-width: 1600px) {
   .sec1 #blobSvg {
@@ -911,6 +913,7 @@
   }
   .portfolio_wrap {
     width: auto;
+    height: calc(100% - 85px);
     padding: 0 5%;
   }
   .port-texts {
@@ -928,6 +931,7 @@
   .port-texts .text-info .page-info p {
     font-size: 14px;
   }
+
   .pfb1,
   .pfb2 {
     top: 79%;
@@ -968,16 +972,69 @@
       transform: scale(0.6);
     }
   }
+  .sec2 .about-wrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sec2 .bubble-wrap .bpb {
+    width: 80%;
+    top: 40%;
+  }
+  .sec2 .bubble-wrap .blob-bg {
+    top: 33%;
+  }
+  .sec2 .bubble-wrap {
+    width: 50%;
+    height: 40%;
+  }
   .port-texts .text-info .page-info p {
     font-size: 14px;
     width: 100%;
+  }
+  .portfolio_wrap {
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   .portfolio_wrap .port-img .imges-wrap .kt4 {
     background: url(../../images/main/KT4-t.jpg) no-repeat 0 0;
     background-size: cover;
   }
+  .portfolio_wrap .port-img {
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+  }
   .port-texts {
-    width: 60%;
+    width: 100%;
+    height: 35%;
+  }
+  .portfolio_wrap .port-img .imges-wrap {
+    height: 80%;
+  }
+  .port-texts .text-info .text-head {
+    top: 0;
+  }
+  .port-texts .text-info .pf-info {
+    top: 25%;
+  }
+  .pfb1,
+  .pfb2 {
+    width: 100%;
+  }
+  .pfb2 .but {
+    width: 30%;
+  }
+  .pfb1 .but {
+    width: 24%;
+  }
+  .page-info {
+    display: none;
+  }
+  .port-texts .text-info .text-head .pf-text {
+    padding-bottom: 5px;
+  }
+  .port-texts .text-info .text-head .pf-logo {
+    width: 50%;
   }
   #fp-nav {
     display: none;
@@ -1004,7 +1061,7 @@
     justify-content: center;
   }
   .sec2 .bubble-wrap .bpb {
-    width: 90%;
+    width: 130%;
     top: 60%;
   }
   .sec2 .bubble-wrap .blob-bg {
@@ -1066,6 +1123,10 @@
   .port-texts .text-info {
     width: 60%;
   }
+  .port-texts .text-info .pf-info {
+    top: 35%;
+    width: 50%;
+  }
   .port-texts .text-info .pf-info li {
     display: flex;
     align-items: center;
@@ -1090,9 +1151,10 @@
 
   .sec2 .bubble-wrap .bpb {
     width: 150%;
+    top: 40%;
   }
   .sec2 .bubble-wrap .blob-bg {
-    width: 75vw;
+    width: 150%;
     top: 30%;
   }
 
@@ -1101,5 +1163,40 @@
   }
   .sec2 .about-txt-wrap .abtxt .about-intro {
     font-size: 14px;
+  }
+  .portfolio_wrap .port-img .imges-wrap .kt4 {
+    background: url(../../images/main/KT4-m.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+  .port-texts .text-info .pf-info {
+    width: 90%;
+    top: 25%;
+  }
+  .port-texts {
+    height: 55%;
+  }
+  .pfb1,
+  .pfb2 {
+    width: 100%;
+    flex-direction: row;
+    top: 70%;
+    left: 0;
+  }
+  .sec4 .pfb2 {
+    top: 75%;
+    left: 0;
+  }
+
+  .port-texts .text-info .text-head .pf-text span {
+    font-size: 14px;
+  }
+  .port-texts .text-info .text-head .pf-text {
+    font-size: 13px;
+  }
+  .port-texts .text-info .pf-info li .pf_info-title {
+    font-size: 14px;
+  }
+  .port-texts .text-info .pf-info li .pf_info-info {
+    font-size: 12px;
   }
 }

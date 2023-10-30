@@ -167,7 +167,7 @@
       <div class="section sec2" data-tooltip="ABOUT ME" data-anchor="aboutme">
         <div id="about">
           <div class="about-wrap">
-            <div class="bubble-wrap" data-aos="fade-down" data-aos-once="false">
+            <div class="bubble-wrap" data-aos="fade-down" data-aos-once="true">
               <div class="bpb blob-pic">
                 <svg
                   viewBox="0 0 500 500"
@@ -214,11 +214,7 @@
                 </svg>
               </div>
             </div>
-            <div
-              class="about-txt-wrap"
-              data-aos="fade-up"
-              data-aos-once="false"
-            >
+            <div class="about-txt-wrap" data-aos="fade-up" data-aos-once="true">
               <div class="abtxt">
                 <div class="about-me">
                   <span>안녕하세요. 신입 웹퍼블리셔 박진희입니다!</span>
@@ -512,6 +508,13 @@
           </div>
         </div>
       </div>
+      <div
+        class="section pfs sec6"
+        data-tooltip="CONTACT ME"
+        data-anchor="contactme"
+      >
+        <div class="contact-wrap"></div>
+      </div>
     </div>
 
     <script>
@@ -544,10 +547,10 @@
         anchors: ["firstPage", "secondPage", "thirdPage"],
         keyboardScrolling: true,
         // navigationPosition: "left",
-        showActiveTooltip: true,
+        showActiveTooltip: false,
         slidesNavigation: true,
         dropEffect: true,
-        responsiveWidth: 768,
+        responsiveWidth: 1025,
 
         onLeave: function () {
           jQuery(".section [data-aos]").removeClass("aos-animate");
@@ -564,12 +567,12 @@
         },
       });
 
-      // document.addEventListener("DOMContentLoaded", () => {
-      //   new window["Cursor"]({
-      //     count: 2,
-      //     targets: ["a"],
-      //   });
-      // });
+      document.addEventListener("DOMContentLoaded", () => {
+        new window["Cursor"]({
+          count: 2,
+          targets: ["a"],
+        });
+      });
     </script>
   </body>
 </html>
