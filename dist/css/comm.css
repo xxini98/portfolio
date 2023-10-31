@@ -431,7 +431,7 @@ legend {
   display: flex;
   max-width: 1440px;
   height: 100vh;
-  margin: auto 0;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -614,7 +614,7 @@ legend {
   font-weight: 200;
 }
 .port-texts .text-info .text-head .pf-logo {
-  width: 85%;
+  width: 75%;
   margin-bottom: 10px;
 }
 .port-texts .text-info .text-head .pf-logo img {
@@ -1284,9 +1284,13 @@ legend {
   .pfb2 {
     top: 10%;
     left: 65%;
+    gap: 20px;
     width: 30%;
     flex-direction: column;
     align-items: center;
+  }
+  .pfb1 .but {
+    width: 100%;
   }
   .pfb2 .but {
     width: 100%;
